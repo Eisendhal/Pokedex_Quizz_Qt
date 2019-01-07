@@ -1,0 +1,20 @@
+############# Utilisation du Pokédex et du jeu #############
+
+Après avoir compilé le projet avec QtCreator (peut prendre du temps à cause du chargement des images):
+
+Onglet Pokédex:
+
+       -Les boutons de tri sont fonctionnels. Le bouton de tri "Tri Num" trie les pokémon selon leur Idnum, le bouton "Tri Alpha" selon leur Idalpha.
+       -Au click sur une cellule contenant un pokémon, une nouvelle vue apparaît contenant les informations détaillées du pokémon (tous les pokémon n'ont pas leurs détails complétés). Cette vue se ferme grâce au bouton "Fermer".
+       -Le bouton "Export" permet d'exporter les différents éléments du modèle (Pokemon, InfoPokemon, Type, Attaque, Effet) au format CSV. La première ligne de chaque fichier CSV indique la nature de l'élément de cette colonne.
+       -Le bouton "Import" permet d'importer des données pour le modèle à partir de fichiers CSV. Dans les fichiers importés, il ne doit pas y avoir de ligne contnant l'indication de la nature de l'élément, en cas du non respect de cette consigne ou du nombre d'arguments de chaque ligne, l'application renvoie une erreur et le numéro de la ligne correspondant.
+       -Pour ajouter de nouvelles images au projet, il faut tout d'abord les ajouter aux ressources du projet (stockées dans le dossier "PetiteImage").
+
+Onglet Jeu:
+
+       -Les mêmes tris sont utilisables dans cette vue.
+       -Les images des pokémon ne sont pas visibles de base, elles ne le sont que lorsque le pokémon a été trouvé.
+       -Pour trouver un pokémon, il faut entrer son nom correctement orthographié (majuscule et accents) dans la barre de saisie et cliquer sur "Submit".       
+       -Au premier click sur "Submit", le timer démarre.
+       -Le timer est fixé à 20 minutes.
+       -Au bout des 20 minutes l'écran de jeu est réinitialisé.
